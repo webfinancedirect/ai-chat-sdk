@@ -67,6 +67,14 @@ header={{
 
 The chat's own buttons come first: read replies aloud, conversations, bookmarks, download, new conversation. Each shows only when it can work. Your `actions` follow. `icon` is an Ionicons name.
 
+## While a reply is on its way
+
+From the moment a message is sent until the first words arrive, the chat shows a spinner with a rotating status line. When the chat's configuration sets an ad carousel, it is shown under the line: your logo, a big line and a small line, turning every 6 seconds, with arrows and dots. Nothing to pass: the lines, the slides and the logo come from the chat's configuration. Colours follow your [theme](theming.md) (`primary`, `onPrimary`, `textMuted`).
+
+## The location card
+
+The card takes a ZIP code, a city ("Madison, WI") or a state ("MN" or "Minnesota"). A state searches the whole state. A ZIP, a city or the device's position (`getPosition`, or `expo-location`) is followed by the chat's radius choices and "Any distance". A city that exists in several states is asked about: the card offers each one.
+
 ## Methods
 
 ```tsx
