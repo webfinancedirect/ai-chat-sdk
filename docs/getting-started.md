@@ -7,10 +7,10 @@ The app cannot start a conversation by itself: that takes your API key, which mu
 ## 2. Install
 
 ```bash
-npm install @webfinancedirect/ai-chat-react-native @expo/vector-icons
+npm install @webfinancedirect/ai-chat-react-native @expo/vector-icons @gorhom/bottom-sheet react-native-gesture-handler react-native-reanimated react-native-worklets react-native-svg
 ```
 
-Add the optional modules for the features you want (see [Native views and optional modules](native.md)), then rebuild the native app:
+Skip any of `@gorhom/bottom-sheet`, `react-native-gesture-handler`, `react-native-reanimated`, `react-native-worklets` and `react-native-svg` your app already has; see [peer dependencies](chat-component.md#peer-dependencies). Add the optional modules for the features you want (see [Native views and optional modules](native.md)), then rebuild the native app:
 
 ```bash
 npx pod-install

@@ -1,6 +1,6 @@
 # Visitors and accounts
 
-A chat can be offered to someone who has not signed up yet. The server decides how far a visitor may go: how many messages, and which steps need an account. When a visitor reaches that point, the text field is replaced by a prompt with two buttons, "Create a free account" and "I already have an account".
+A chat can be offered to someone who has not signed up yet. The server decides how far a visitor may go: how many messages, and which steps need an account. When a visitor reaches that point, the text field is replaced by a prompt with a "Sign up" button and an "Already have an account? Log in" link.
 
 A chat takes visitors only if it is configured to. If it is not, starting an anonymous conversation answers `403`.
 

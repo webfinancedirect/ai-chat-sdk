@@ -34,7 +34,7 @@ So there are two parts to set up:
 ## Install
 
 ```bash
-npm install @webfinancedirect/ai-chat-react-native @expo/vector-icons
+npm install @webfinancedirect/ai-chat-react-native @expo/vector-icons @gorhom/bottom-sheet react-native-gesture-handler react-native-reanimated react-native-worklets react-native-svg
 ```
 
 Then rebuild the native app (`npx pod-install`, or `npx expo prebuild` and a new build): the package contains native code.
