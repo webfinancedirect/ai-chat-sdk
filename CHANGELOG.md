@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.0
+
+- Comparison for uploads
+
 ## 0.3.0
 
 - New peer dependencies: `@gorhom/bottom-sheet` (5 or later), `react-native-gesture-handler` (2 or later), `react-native-reanimated` (3 or later; version 4 also needs `react-native-worklets`) and `react-native-svg` (13 or later). `expo-haptics` is optional: with it, copying a reply gives a light tap. Install the ones your app lacks and rebuild it. `Chat` and `ChatView` wrap themselves in `GestureHandlerRootView` and `BottomSheetModalProvider`, so your app adds no provider for them.
