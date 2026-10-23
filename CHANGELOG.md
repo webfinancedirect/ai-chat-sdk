@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0
+
+- Fixes & improvements
+
 ## 0.4.0
 
 - Comparison for uploads
