@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.7.0
+
+- `Chat` takes `onProgress`, as `ChatView` does: messages the customer has sent, and whether a reply is being worked on.
+- `ChatHandle.measure(part)` and `ChatViewHandle.measure(part)` say where a part of the chat is on screen (`header`, `conversation`, `starters`, `composer`, `journey`), or `null` when it is not drawn. New types `ChatPart` and `PartFrame`.
+
 ## 0.6.2
 
 - input hiding behind keyboard fix

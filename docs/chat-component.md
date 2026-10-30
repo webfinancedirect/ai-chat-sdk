@@ -66,6 +66,7 @@ Each maps to an endpoint in [Backend](backend.md).
 | `firstName` | `string` | The signed-in customer's first name, for "Welcome back" over their recent conversations. |
 | `assistantName` | `string` | The assistant's name in the chat's own copy ("Everything Alex is tracking for you"). Without it the assistant is Alex. |
 | `onEvent` | `(name, payload) => void` | Things that happened in the conversation, for your analytics. Names and payloads are set by the chat's configuration. |
+| `onProgress` | `(progress) => void` | Where the conversation stands, whenever it changes: `userMessages` (messages the customer has sent), `responding` (a reply is being worked on), `loaded`, `stage`, `limited`, `feedback`, `anonymous`. A reply that ends quickly may never report `responding: true`: the count going up with nothing running means the reply is done. |
 | `pickFile` | `(source) => Promise<PickedFile \| null>` | Your own file picker, used in place of Expo's. |
 | `getPosition` | `() => Promise<{ lat, lng } \| null>` | Your own location provider, used in place of `expo-location`. |
 | `renderText` | `(text, streaming) => ReactNode` | Draw a reply's text yourself. |
@@ -104,6 +105,7 @@ const chat = useRef<ChatHandle>(null);
 | `startNew()` | Starts a new conversation. |
 | `openBookmarks()` | Opens the customer's bookmarks. |
 | `leave(proceed)` | Runs `proceed` now, or after the rating prompt when one is due. |
+| `measure(part)` | Where a part of the chat is on screen, in window coordinates (`{ x, y, width, height }`), or `null` when it is not drawn right now. `part` is `"header"`, `"conversation"`, `"starters"`, `"composer"` or `"journey"`. For pointing at the chat in a tour of your app. |
 
 ## Leaving the chat
 
