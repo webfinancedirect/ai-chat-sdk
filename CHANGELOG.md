@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.2
+
+- input hiding behind keyboard fix
+
 ## 0.6.1
 
 - ads look
