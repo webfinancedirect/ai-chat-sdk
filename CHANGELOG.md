@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.2
+
+- With more than nine photos, the vehicle details' dots follow the photo shown instead of running off the edge.
+- Listings show all their photos (up to 50), not the first six.
+
 ## 0.8.1
 
 - A vehicle card shows how many photos the listing has, at the bottom right of the photo (`VehicleCard.photoCount`, sent only when there is more than one).

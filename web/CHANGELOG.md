@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.2
+
+- The vehicle details' photos show dots and "n / N" for the photo on screen; a dot opens its photo. With more than nine photos the dots follow the one shown.
+- Listings show all their photos (up to 50), not the first six.
+
 ## 0.1.1
 
 - A vehicle card shows how many photos the listing has, at the bottom right of the photo (`VehicleCard.photoCount`, sent only when there is more than one).
