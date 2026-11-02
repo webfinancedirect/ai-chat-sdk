@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- A vehicle card shows how many photos the listing has, at the bottom right of the photo (`VehicleCard.photoCount`, sent only when there is more than one).
+
 ## 0.1.0
 
 - First release: `Chat`, the whole conversation in a three-pane layout, with every card the chat sends (next steps, consents, the pre-approval estimate, the application summary and its edit form, the location card, secure inputs, document uploads, vehicle results, details, favourites, comparison and protection products), attachments, dictation, reading aloud, history, bookmarks, export, ratings and the sign-up prompt for visitors.

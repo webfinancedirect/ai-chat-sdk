@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.1
+
+- A vehicle card shows how many photos the listing has, at the bottom right of the photo (`VehicleCard.photoCount`, sent only when there is more than one).
+
 ## 0.8.0
 
 - `Chat` takes `chat`: for a tenant with more than one chat, which one this is. Each chat remembers its own current conversation.
