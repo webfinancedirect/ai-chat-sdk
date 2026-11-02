@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- The photo counter in the vehicle details keeps its place at the bottom right on a page that has its own `.ai-carousel-counter` rule, instead of stretching down the side of the photo.
+
 ## 0.1.2
 
 - The vehicle details' photos show dots and "n / N" for the photo on screen; a dot opens its photo. With more than nine photos the dots follow the one shown.
