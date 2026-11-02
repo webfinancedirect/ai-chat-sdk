@@ -54,6 +54,7 @@ Each maps to an endpoint in [Backend](backend.md).
 
 | Prop | Type | |
 |---|---|---|
+| `chat` | `string` | For a tenant with more than one chat: which one this is: its workflow slug. Your `backend` must open and list that same chat. Each chat remembers its own current conversation. Leave it out for the default chat. |
 | `storage` | `KeyValueStorage` | Where the chat remembers things on the device. `AsyncStorage` fits as it is. Without it nothing outlives the screen: the customer gets a new conversation each time. |
 | `header` | `{ title, onBack?, actions? }` | The bar over the conversation. Leave it out to draw your own and use the methods below. |
 | `context` | `Record<string, string>` | Passed to `backend.create` for a new conversation. |

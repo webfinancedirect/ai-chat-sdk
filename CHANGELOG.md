@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.8.0
+
+- `Chat` takes `chat`: for a tenant with more than one chat, which one this is. Each chat remembers its own current conversation.
+- The keyboard goes away when the history opens (from the header or "See all conversations"), as it does for the chat's other sheets.
+- With the keyboard up, the launcher scrolls instead of running under the header.
+- `initialMessage` is asked in a new conversation. It used to be dropped when the remembered conversation already had messages. A conversation handed over in `sessionId` is still continued.
+
 ## 0.7.0
 
 - `Chat` takes `onProgress`, as `ChatView` does: messages the customer has sent, and whether a reply is being worked on.
